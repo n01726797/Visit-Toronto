@@ -1,21 +1,83 @@
+<link href="/css/output.css" rel="stylesheet">
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">Best Shopping Destinations in Toronto</h1>
-    <p class="mt-4">Toronto is a shopper’s paradise, offering everything from luxury brands to local boutiques.</p>
-    
-    <h2 class="text-2xl font-semibold mt-6">Top Shopping Areas</h2>
-    <ul class="mt-4 list-disc ml-6">
-        <li><b>Toronto Eaton Centre</b> – One of the largest shopping malls in Canada with over 250 stores.</li>
-        <li><b>Yorkville</b> – A luxury shopping district with high-end fashion brands.</li>
-        <li><b>Kensington Market</b> – A vibrant area for vintage fashion and handmade crafts.</li>
-        <li><b>Queen Street West</b> – A trendy area with unique local boutiques and fashion stores.</li>
-        <li><b>Distillery District</b> – A charming area with artisanal shops and galleries.</li>
-    </ul>
+    <!-- Hero Section -->
+    <div class="hero h-64" style="background-image: url('/images/shopping-toronto.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-white">
+            <h1 class="text-4xl font-bold">Best Shopping Destinations in Toronto</h1>
+            <p class="text-lg mt-2">Toronto is a shopper’s paradise, offering everything from luxury brands to local boutiques.</p>
+        </div>
+    </div>
 
-    <h2 class="text-2xl font-semibold mt-6">Shopping Tips</h2>
-    <p class="mt-4">Many malls and shops offer discounts during sales seasons like **Boxing Day (December 26)** and **Black Friday (November)**.</p>
+    <!-- Shopping Areas -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold">Top Shopping Areas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+            <!-- Toronto Eaton Centre -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="/images/eaton-centre.jpg" alt="Toronto Eaton Centre" class="h-40 w-full object-cover">
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Toronto Eaton Centre</h3>
+                    <p>One of the largest shopping malls in Canada with over 250 stores.</p>
+                </div>
+            </div>
+
+            <!-- Yorkville -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="/images/yorkville.jpg" alt="Yorkville" class="h-40 w-full object-cover">
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Yorkville</h3>
+                    <p>A luxury shopping district with high-end fashion brands.</p>
+                </div>
+            </div>
+
+            <!-- Kensington Market -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="/images/kensington-market.jpg" alt="Kensington Market" class="h-40 w-full object-cover">
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Kensington Market</h3>
+                    <p>A vibrant area for vintage fashion and handmade crafts.</p>
+                </div>
+            </div>
+
+            <!-- Queen Street West -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="/images/queen-street-west.jpg" alt="Queen Street West" class="h-40 w-full object-cover">
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Queen Street West</h3>
+                    <p>A trendy area with unique local boutiques and fashion stores.</p>
+                </div>
+            </div>
+
+            <!-- Distillery District -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="/images/distillery-district.jpg" alt="Distillery District" class="h-40 w-full object-cover">
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Distillery District</h3>
+                    <p>A charming area with artisanal shops and galleries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Tips Section -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold">Shopping Tips</h2>
+        <p class="mt-4">Many malls and shops offer discounts during sales seasons like <strong>Boxing Day (December 26)</strong> and <strong>Black Friday (November)</strong>.</p>
+    </section>
 </main>
 
 <%- include('partials/footer') %>
