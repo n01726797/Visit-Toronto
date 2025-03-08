@@ -1,13 +1,44 @@
+<link href="/css/output.css" rel="stylesheet">
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">Public Transit in Toronto</h1>
-    <p class="mt-4">Toronto’s public transit system (TTC) includes:</p>
-    <ul class="mt-4 list-disc ml-6">
-        <li><b>Subways</b> – Fast and reliable way to get around.</li>
-        <li><b>Buses & Streetcars</b> – Great for shorter trips.</li>
-    </ul>
+    <!-- Hero Section -->
+    <div class="hero h-64" style="background-image: url('/images/toronto-transit.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-white">
+            <h1 class="text-4xl font-bold">Public Transit in Toronto</h1>
+            <p class="text-lg mt-2">Explore Toronto's convenient and reliable transit system.</p>
+        </div>
+    </div>
+
+    <!-- Transit Details -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold">Toronto Transit Commission (TTC)</h2>
+        <div class="mt-4 space-y-4">
+            <!-- Subways -->
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h3 class="card-title text-xl font-semibold">Subways</h3>
+                    <p>Toronto’s subway system is fast, reliable, and covers the city’s core. It’s the most efficient way to travel long distances quickly.</p>
+                </div>
+            </div>
+
+            <!-- Buses & Streetcars -->
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h3 class="card-title text-xl font-semibold">Buses & Streetcars</h3>
+                    <p>Buses and streetcars are ideal for shorter trips or areas not covered by the subway. They provide a great way to explore different neighborhoods in the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transit Tips Section -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold">Transit Tips</h2>
+        <p class="mt-4">To make your trip smoother, make sure to use a Presto card for easy payment on subways, buses, and streetcars.</p>
+    </section>
 </main>
 
 <%- include('partials/footer') %>
