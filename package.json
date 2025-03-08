@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/n01726797/Visit-Toronto/issues"
   },
-  "homepage": "https://github.com/n01726797/Visit-Toronto#readme"
+  "homepage": "https://github.com/n01726797/Visit-Toronto#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
 }
