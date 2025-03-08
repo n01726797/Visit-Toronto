@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/n01726797/Visit-Toronto#readme",
   "dependencies": {
+    "daisyui": "^5.0.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
   },
