@@ -1,15 +1,49 @@
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
+<link href="/css/output.css" rel="stylesheet">
+
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">Best Food Spots in Toronto</h1>
-    <p class="mt-4">Toronto is a food lover’s paradise with diverse culinary experiences. Some must-visit spots include:</p>
-    <ul class="mt-4 list-disc ml-6">
-        <li><b>St. Lawrence Market</b> – A historic market with fresh produce and artisanal food.</li>
-        <li><b>Kensington Market</b> – A cultural hotspot with international street food.</li>
-        <li><b>Chinatown</b> – Home to some of the best dumplings, dim sum, and noodle dishes.</li>
-        <li><b>Distillery District</b> – A charming area with great restaurants and cafes.</li>
-    </ul>
+    <h1 class="text-4xl font-bold text-center">Best Food Spots in Toronto</h1>
+    <p class="mt-4 text-lg text-center">Toronto is a food lover’s paradise with diverse culinary experiences. Here are some must-visit spots:</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+        <!-- St. Lawrence Market -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/st-lawrence-market.jpg" alt="St. Lawrence Market"></figure>
+            <div class="card-body">
+                <h2 class="card-title">St. Lawrence Market</h2>
+                <p>A historic market with fresh produce and artisanal food.</p>
+            </div>
+        </div>
+
+        <!-- Kensington Market -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/kensington-market.jpg" alt="Kensington Market"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Kensington Market</h2>
+                <p>A cultural hotspot with international street food.</p>
+            </div>
+        </div>
+
+        <!-- Chinatown -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/chinatown.jpg" alt="Chinatown"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Chinatown</h2>
+                <p>Home to some of the best dumplings, dim sum, and noodle dishes.</p>
+            </div>
+        </div>
+
+        <!-- Distillery District -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/distillery-district.jpg" alt="Distillery District"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Distillery District</h2>
+                <p>A charming area with great restaurants and cafes.</p>
+            </div>
+        </div>
+    </div>
 </main>
 
 <%- include('partials/footer') %>
