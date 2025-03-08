@@ -1,14 +1,53 @@
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
+<link href="/css/output.css" rel="stylesheet">
+
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">Toronto's Nightlife</h1>
-    <p class="mt-4">Toronto has a vibrant nightlife scene with amazing bars, clubs, and live music venues:</p>
-    <ul class="mt-4 list-disc ml-6">
-        <li><b>King Street West</b> – Trendy nightclubs and bars.</li>
-        <li><b>The Danforth</b> – Greek-inspired bars and live music.</li>
-        <li><b>Queen Street West</b> – Indie music venues and cocktail lounges.</li>
-    </ul>
+    <!-- Hero Section -->
+    <div class="hero h-64" style="background-image: url('/images/toronto-nightlife.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-white">
+            <h1 class="text-4xl font-bold">Toronto's Nightlife</h1>
+            <p class="text-lg mt-2">Discover the city's best bars, clubs, and live music venues!</p>
+        </div>
+    </div>
+
+    <!-- Nightlife Spots -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <!-- King Street West -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure>
+                <img src="/images/king-street-west.jpg" alt="King Street West" class="h-40 w-full object-cover">
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">King Street West</h2>
+                <p>Trendy nightclubs and upscale bars, perfect for a lively night out.</p>
+            </div>
+        </div>
+
+        <!-- The Danforth -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure>
+                <img src="/images/danforth.jpg" alt="The Danforth" class="h-40 w-full object-cover">
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">The Danforth</h2>
+                <p>Greek-inspired bars and live music venues with a cozy atmosphere.</p>
+            </div>
+        </div>
+
+        <!-- Queen Street West -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure>
+                <img src="/images/queen-street-west.jpg" alt="Queen Street West" class="h-40 w-full object-cover">
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Queen Street West</h2>
+                <p>Indie music venues, cool cocktail lounges, and artsy vibes.</p>
+            </div>
+        </div>
+    </div>
 </main>
 
 <%- include('partials/footer') %>
