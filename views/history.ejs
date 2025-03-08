@@ -1,10 +1,28 @@
+<link href="/css/output.css" rel="stylesheet">
+
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">History of Toronto</h1>
-    <p class="mt-4">Toronto was originally inhabited by Indigenous peoples before becoming a British settlement in 1793.</p>
-    <p class="mt-2">Over time, it grew into Canada's largest city, known for its multiculturalism and economic strength.</p>
+    <!-- Hero Section -->
+    <div class="hero h-64" style="background-image: url('/images/toronto-history.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay bg-opacity-50"></div>
+        <div class="hero-content text-center text-white">
+            <h1 class="text-4xl font-bold">History of Toronto</h1>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="flex justify-center mt-8">
+        <div class="card w-full md:w-3/4 bg-base-100 shadow-xl p-6">
+            <p class="text-lg">
+                Toronto was originally inhabited by Indigenous peoples before becoming a British settlement in 1793.
+            </p>
+            <p class="mt-4 text-lg">
+                Over time, it grew into Canada's largest city, known for its multiculturalism and economic strength.
+            </p>
+        </div>
+    </div>
 </main>
 
 <%- include('partials/footer') %>
