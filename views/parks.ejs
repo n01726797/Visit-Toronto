@@ -1,13 +1,41 @@
+<link href="/css/output.css" rel="stylesheet">
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">Parks & Outdoor Activities</h1>
-    <p class="mt-4">Escape the city buzz and explore Toronto’s beautiful parks:</p>
-    <ul class="mt-4 list-disc ml-6">
-        <li><b>High Park</b> – Cherry blossoms and hiking trails.</li>
-        <li><b>Toronto Islands</b> – Beaches and cycling trails.</li>
-    </ul>
+    <!-- Hero Section -->
+    <div class="hero h-64" style="background-image: url('/images/toronto-parks.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-white">
+            <h1 class="text-4xl font-bold">Parks & Outdoor Activities</h1>
+            <p class="text-lg mt-2">Escape the city buzz and explore Toronto’s beautiful parks.</p>
+        </div>
+    </div>
+
+    <!-- Parks List -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <!-- High Park -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure>
+                <img src="/images/high-park.jpg" alt="High Park" class="h-40 w-full object-cover">
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">High Park</h2>
+                <p>Experience cherry blossoms in spring and scenic hiking trails throughout the year.</p>
+            </div>
+        </div>
+
+        <!-- Toronto Islands -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure>
+                <img src="/images/toronto-islands.jpg" alt="Toronto Islands" class="h-40 w-full object-cover">
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Toronto Islands</h2>
+                <p>Enjoy beautiful beaches, cycling trails, and a relaxing escape from the city.</p>
+            </div>
+        </div>
+    </div>
 </main>
 
 <%- include('partials/footer') %>
