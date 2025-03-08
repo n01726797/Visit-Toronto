@@ -1,15 +1,32 @@
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
+<link href="/css/output.css" rel="stylesheet">
+
 
 <main class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold">Contact Us</h1>
-    <p class="mt-4">Have questions? Feel free to reach out!</p>
-    <form class="mt-4 space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-2 border rounded">
-        <input type="email" placeholder="Your Email" class="w-full p-2 border rounded">
-        <textarea placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
-    </form>
+    <h1 class="text-4xl font-bold text-center">Contact Us</h1>
+    <p class="mt-4 text-lg text-center">Have questions? Feel free to reach out!</p>
+    
+    <div class="max-w-lg mx-auto mt-6 bg-white shadow-lg p-6 rounded-lg">
+        <form class="space-y-4">
+            <div class="form-control">
+                <label class="label"><span class="label-text">Your Name</span></label>
+                <input type="text" placeholder="Enter your name" class="input input-bordered w-full">
+            </div>
+            
+            <div class="form-control">
+                <label class="label"><span class="label-text">Your Email</span></label>
+                <input type="email" placeholder="Enter your email" class="input input-bordered w-full">
+            </div>
+            
+            <div class="form-control">
+                <label class="label"><span class="label-text">Your Message</span></label>
+                <textarea placeholder="Type your message here..." class="textarea textarea-bordered w-full"></textarea>
+            </div>
+
+            <button class="btn btn-primary w-full">Send Message</button>
+        </form>
+    </div>
 </main>
 
 <%- include('partials/footer') %>
