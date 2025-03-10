@@ -1,0 +1,14 @@
+# Ignore system files
+.DS_Store
+.Trashes/
+
+# Ignore user-specific IDE settings
+.vscode/
+
+# Ignore downloads, PDF, and zip files
+Downloads/
+*.pdf
+*.zip
+
+# Ignore other common files
+.gitconfig
