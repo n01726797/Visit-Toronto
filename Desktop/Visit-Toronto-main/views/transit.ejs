@@ -1,0 +1,42 @@
+<link href="/css/output.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main class="container mx-auto p-8">
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+        <div class="hero-image h-64" style="background-image: url('https://i.cbc.ca/1.1498297.1427403246!/httpImage/image.jpg_gen/derivatives/16x9_940/hi-852-new-streetcar.jpg');"></div>
+        <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+        <div class="hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+            <h1 class="text-4xl font-bold mb-2 mt-8">Public Transit in Toronto</h1>
+            <p class="text-lg">Explore Toronto's convenient and reliable transit system.</p>
+        </div>
+    </section>
+
+    <!-- Transit Details -->
+    <section class="transit-details mt-12">
+        <h2 class="text-2xl font-semibold mb-6">Toronto Transit Commission (TTC)</h2>
+        
+        <!-- Subways Section -->
+        <div class="transit-section mb-8">
+            <h3 class="text-xl font-semibold mb-4">Subways</h3>
+            <p>Toronto’s subway system is fast, reliable, and covers the city’s core. It’s the most efficient way to travel long distances quickly.</p>
+        </div>
+
+        <!-- Buses & Streetcars Section -->
+        <div class="transit-section mb-8">
+            <h3 class="text-xl font-semibold mb-4">Buses & Streetcars</h3>
+            <p>Buses and streetcars are ideal for shorter trips or areas not covered by the subway. They provide a great way to explore different neighborhoods in the city.</p>
+        </div>
+    </section>
+
+    <!-- Transit Tips Section -->
+    <section class="transit-tips mt-10">
+        <h2 class="text-2xl font-semibold mb-4">Transit Tips</h2>
+        <p>To make your trip smoother, make sure to use a Presto card for easy payment on subways, buses, and streetcars.</p>
+    </section>
+</main>
+
+<%- include('partials/footer') %>

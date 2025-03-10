@@ -1,0 +1,798 @@
+// Colors
+$primary-color: #8b0e16;
+$hover-color: #fbc7c9;
+$text-color: #ffffff;
+$button-color: #e2160f; // Yellow
+$button-hover: #fbc7c9;
+$secondary-color: #110604; // Dark color for text
+$font-family: 'Arial', sans-serif;
+
+// header
+
+
+// Mixins for reusable code
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $primary-color;
+  color: $text-color;
+  border: none;
+  padding: 5px 10px; 
+  font-size: 6px; 
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+    color: $secondary-color;
+  }
+}
+
+// Main header styles
+.header {
+  background-color: $secondary-color;
+  color: $text-color;
+  height: 30px;
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: $text-color;
+      font-size: 15px; 
+      margin: 2; 
+    }
+
+    .explore-btn {
+      @include button-styles($secondary-color, white);
+    }
+  }
+
+  // Mobile responsive design
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        font-size: 4px;
+        margin-bottom: 2px; 
+      }
+
+      .explore-btn {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+// Navbar Styles
+.navbar {
+
+  top: 0;
+  width: 100%;
+  background: #8b0e16; 
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+
+    li {
+      position: relative;
+
+      .nav-item {
+        color: $text-color;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 8px 12px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: $hover-color;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -5px;
+          width: 0;
+          height: 2px;
+          transition: all 0.3s ease-in-out;
+          transform: translateX(-50%);
+        }
+
+        &:hover::after,
+        &.active::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Mobile Menu Button
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: $text-color;
+    cursor: pointer;
+  }
+}
+
+// Mobile Styles
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: $primary-color;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+    &.active {
+      display: flex;
+    }
+
+    li {
+      padding: 0.5rem 0;
+    }
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+// Home
+
+
+// Main Content
+main {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.buttonn {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+// Footer
+footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  img {
+    max-width: 90%;
+  }
+}
+
+
+// Footer
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 4rem;
+
+  // Social Media Links
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+
+    a {
+      color: white;
+      font-size: 1.125rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  // Copyright Text
+  p {
+    font-size: 0.875rem;
+    color: #e2e8f0; // Slightly lighter text for readability
+    margin-top: 1rem;
+  }
+}
+
+// Responsive Footer Styles
+@media (max-width: 768px) {
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+
+//   About
+
+// Main Section Styling
+.main {
+  padding: 4rem 0;
+}
+
+.main__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+.main__text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: $secondary-color;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-toronto,
+.places-to-visit,
+.must-try-foods,
+.outdoor-activities,
+.cultural-experiences,
+.conclusion {
+  margin-bottom: 4rem;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.place-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+}
+
+.place-card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.place-card__description {
+  font-size: 1rem;
+  color: black
+}
+
+.food-list,
+.activities-list,
+.cultural-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.food-list li,
+.activities-list li,
+.cultural-list li {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.food-list li strong,
+.activities-list li strong,
+.cultural-list li strong {
+  color: $primary-color;
+}
+
+
+// events
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr; 
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+.car {
+  background-color: $button-hover;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; 
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  figure {
+    width: 40%; 
+    height: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .car-body {
+    padding: 1.5rem;
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    .car-title {
+      font-size: 1.5rem;
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+  }
+}
+
+// Toronto night life
+
+$card-hover-color: rgba(0, 0, 0, 0.6);
+$card-border-radius: 12px;
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+$card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+.cardd {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardd-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.cardd-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, $card-hover-color, transparent);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.cardd:hover {
+  transform: scale(1.05);
+  box-shadow: $card-hover-shadow;
+}
+
+.cardd:hover .card-img {
+  opacity: 1; // Image becomes more visible on hover
+}
+
+.cardd-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.cardd-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.cardd:hover .card-overlay {
+  background: rgba(0, 0, 0, 0.7); 
+}
+
+
+// parks
+
+.carrd {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .figure {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+
+  &:hover .figure img {
+    transform: scale(1.1);
+  }
+
+  .carrd-body {
+    padding: 16px;
+    text-align: center;
+
+    .carrd-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+}
+
+
+// Transit
+.heroo-section {
+  position: relative;
+}
+
+.heroo-image {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.heroo-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.heroo-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heroo-content p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+// Transit Section Styles
+.transit-details {
+  margin-top: 40px;
+}
+
+.transit-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transit-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.transit-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+// Transit Tips Section Styles
+.transit-tips {
+  margin-top: 40px;
+}
+
+.transit-tips h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.transit-tips p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+
+
+// Contact
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #7f8c8d;
+  }
+
+  .form-container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .form-control {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          .label-text {
+            font-weight: 600;
+            color: #34495e;
+            font-size: 1rem;
+          }
+
+          .input,
+          .textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+            background: #f9f9f9;
+
+            &:focus {
+              outline: none;
+              border-color: #3498db;
+              box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+              background: #fff;
+            }
+          }
+
+          .textarea {
+            min-height: 140px;
+            resize: vertical;
+          }
+        }
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: #fff;
+        padding: 0.85rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+          background: linear-gradient(135deg, #2980b9, #1f618d);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Footer Styles
+.footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+// Responsive Design for Smaller Screens
+@media screen and (max-width: 768px) {
+  .main__title {
+    font-size: 2.5rem;
+  }
+
+  .main__text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

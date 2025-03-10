@@ -1,0 +1,33 @@
+{
+  "name": "visit-toronto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "sass": "sass --watch public/scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n01726797/Visit-Toronto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/n01726797/Visit-Toronto/issues"
+  },
+  "homepage": "https://github.com/n01726797/Visit-Toronto#readme",
+  "dependencies": {
+    "daisyui": "^5.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "sass": "^1.85.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

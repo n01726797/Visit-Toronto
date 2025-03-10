@@ -1,0 +1,69 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<link href="/css/output.css" rel="stylesheet">
+
+<main class="container mx-auto p-8">
+    <!-- Hero Section -->
+    <section class="relative mb-16">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/toronto/TIFF_Bell_lightbox_night_8bde8924-35f3-4cbe-81d8-3fab90c8e067.jpg" alt="Toronto Nightlife" class="w-full h-96 object-cover">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10">
+            <h1 class="text-5xl font-bold mb-4">Explore Toronto's Nightlife</h1>
+            <p class="text-xl mb-6">From the hottest nightclubs to cozy bars, experience the best of the city's after-dark scene.</p>
+            <a href="#nightlife-spots" class="btn btn-primary px-8 py-3 text-lg">See the Best Spots</a>
+        </div>
+    </section>
+
+   
+   
+    <!-- Nightlife Spots Section -->
+    <section id="nightlife-spots" class="mb-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Top Nightlife Spots</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- King Street West -->
+            <div class="cardd square-card relative">
+                <img src="https://tirbnb.com/wp-content/uploads/2020/03/King-West-Village.jpg" alt="King Street West" class="card-img">
+                <div class="cardd-overlay">
+                    <h3 class="cardd-title">King Street West</h3>
+                    <p class="cardd-description">One of the liveliest streets, featuring upscale bars, trendy clubs, and a vibrant atmosphere.</p>
+                </div>
+            </div>
+
+            <!-- The Danforth -->
+            <div class="cardd square-card relative">
+                <img src="https://images.squarespace-cdn.com/content/v1/5a8300d6017db2c59a125d44/1519100105960-XHHAOGEKXDIIAI3DCNQ3/Wheels+On+The+Danforth+%2808-19-17%29+-+PAWELECphoto+-+72dpi+%28WM%29+-290.jpg" alt="The Danforth" class="card-img">
+                <div class="cardd-overlay">
+                    <h3 class="cardd-title">The Danforth</h3>
+                    <p class="cardd-description">A unique blend of Greek-inspired bars and cozy live music venues for a relaxed vibe.</p>
+                </div>
+            </div>
+
+            <!-- Queen Street West -->
+            <div class="cardd square-card relative">
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_440,q_65,w_640,x_1430,y_1308/v1/clients/toronto/16903E_1_08da1dbb-38ca-4ef2-8a40-4490c3ac4c52.jpg" alt="Queen Street West" class="card-img">
+                <div class="cardd-overlay">
+                    <h3 class="cardd-title">Queen Street West</h3>
+                    <p class="cardd-description">Known for indie music venues, cocktail lounges, and a vibrant artsy culture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Events Section -->
+    <section class="bg-gray-100 py-16 mb-16 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Featured Events</h2>
+        <p class="text-lg mb-12">From live performances to DJ nights, discover the top events happening in Toronto's nightlife scene.</p>
+        <a href="#events" class="btn btn-primary px-8 py-3 text-lg">View Events</a>
+    </section>
+
+    <!-- Footer Call-to-Action Section -->
+    <section class="bg-blue-800 py-16  text-center">
+        <h2 class="text-3xl font-semibold mb-6">Ready to Experience Toronto After Dark?</h2>
+        <p class="text-lg mb-8">Whether you're a local or a visitor, Toronto’s nightlife has something for everyone. Don't miss out on the fun!</p>
+        <a href="#nightlife-spots" class="btn btn-light px-8 py-3 text-lg">Find Your Spot</a>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
