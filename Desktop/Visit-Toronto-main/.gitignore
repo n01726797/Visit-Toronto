@@ -1,6 +1,16 @@
 # Ignore system files
 .DS_Store
 .Trashes/
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore directories
+.Trash/
+Library/
+*.photoslibrary/
+*.app/
 
 # Ignore user-specific IDE settings
 .vscode/
