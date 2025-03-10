@@ -1,0 +1,53 @@
+<link href="/css/output.css" rel="stylesheet">
+
+
+
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<!-- <link href="/css/output.css" rel="stylesheet"> -->
+
+
+<main class="container mx-auto p-8 text-center">
+    <h1 class="text-4xl font-bold">Top Attractions in Toronto</h1>
+    <p class="mt-4 text-lg">Discover some of the most famous landmarks and attractions that make Toronto special.</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+        <!-- CN Tower -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="https://media.cnn.com/api/v1/images/stellar/prod/130723065537-cn-tower-0723.jpg?q=x_0,y_0,h_2304,w_4096,c_fill/h_833,w_1480" alt="CN Tower" class="w-full h-64 object-cover"></figure>
+            <div class="card-body">
+                <h2 class="card-title">CN Tower</h2>
+                <p>One of the world's tallest towers with a glass floor and breathtaking views.</p>
+            </div>
+        </div>
+
+        <!-- Royal Ontario Museum -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0c/11/cc/d5.jpg" alt="Royal Ontario Museum" class="w-full h-64 object-cover"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Royal Ontario Museum</h2>
+                <p>A fascinating museum featuring art, history, and science exhibits.</p>
+            </div>
+        </div>
+
+        <!-- Casa Loma f --> 
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="https://casaloma.ca/wp-content/uploads/2019/02/casa1-1.jpg" alt="Casa Loma" class="w-full h-64 object-cover"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Casa Loma</h2>
+                <p>A historic castle with stunning architecture and beautiful gardens.</p>
+            </div>
+        </div>
+
+        <!-- Ripley’s Aquarium -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure><img src="https://afar.brightspotcdn.com/dims4/default/01bba9d/2147483647/strip/true/crop/728x500+36+0/resize/660x453!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F1d%2F1e%2F32a65b7851c6de2512d9595420f7%2Foriginal-7a6159acdc819139da2d44a4523fba47.jpg" alt="Ripley’s Aquarium" class="w-full h-64 object-cover"></figure>
+            <div class="card-body">
+                <h2 class="card-title">Ripley’s Aquarium</h2>
+                <p>Home to thousands of marine animals and an incredible underwater tunnel.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

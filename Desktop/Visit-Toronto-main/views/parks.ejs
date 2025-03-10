@@ -1,0 +1,48 @@
+<link href="/css/output.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+
+
+    <!-- Parks List Section with 3-Column Layout -->
+    <section id="parks" class="mt-20">
+        <h2 class="text-3xl font-semibold text-center mb-8">Explore Toronto's Parks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- High Park -->
+            <div class="carrd mt-6 bg-white shadow-xl overflow-hidden transition-transform transform hover:translate-y-[-10px] hover:shadow-lg">
+                <figure class="relative overflow-hidden">
+                    <img src="https://www.tclf.org/sites/default/files/thumbnails/image/HighPark_feature_NathanJenkins_2014-09.jpg" alt="High Park" class="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110">
+                </figure>
+                <div class="carrd-body p-4 text-center">
+                    <h3 class="carrd-title text-2xl font-semibold mb-2">High Park</h3>
+                    <p class="text-gray-600">Experience cherry blossoms in spring and scenic hiking trails throughout the year.</p>
+                </div>
+            </div>
+
+            <!-- Toronto Islands -->
+            <div class="carrd mt-6  bg-white shadow-xl overflow-hidden transition-transform transform hover:translate-y-[-10px] hover:shadow-lg">
+                <figure class="relative overflow-hidden">
+                    <img src="https://www.artscape.ca/wp-content/uploads/2020/09/TorontoIsland7.jpg" alt="Toronto Islands" class="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110">
+                </figure>
+                <div class="carrd-body p-4 text-center">
+                    <h3 class="carrd-title text-2xl font-semibold mb-2">Toronto Islands</h3>
+                    <p class="text-gray-600 ">Enjoy beautiful beaches, cycling trails, and a relaxing escape from the city.</p>
+                </div>
+            </div>
+            <div class="carrd bg-white shadow-xl overflow-hidden transition-transform transform hover:translate-y-[-10px] hover:shadow-lg">
+                <figure class="relative overflow-hidden">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/20/b3/81/20181022-124841-largejpg.jpg?w=900&h=500&s=1" alt="Toronto Islands" class="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110">
+                </figure>
+                <div class="carrd-body p-4 text-center">
+                    <h3 class="carrd-title text-2xl font-semibold mb-2">Trinity Bellwoods Park</h3>
+                    <p class="text-gray-600 ">Spend a day in this lively park known for picnics, community events, and great green spaces.</p>
+                </div>
+            </div>
+      
+           
+    </section>
+</main>
+
+<%- include('partials/footer') %>

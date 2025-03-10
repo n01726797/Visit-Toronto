@@ -1,0 +1,34 @@
+<link href="/css/output.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+
+<main class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold text-center">Contact Us</h1>
+    <p class="mt-4 text-lg text-center">Have questions? Feel free to reach out!</p>
+    
+    <div class="max-w-lg mx-auto mt-6 bg-white shadow-lg p-6 rounded-lg">
+        <form class="space-y-4">
+            <div class="form-control">
+                <label class="label"><span class="label-text">Your Name</span></label>
+                <input type="text" placeholder="Enter your name" class="input input-bordered w-full">
+            </div>
+            
+            <div class="form-control">
+                <label class="label"><span class="label-text">Your Email</span></label>
+                <input type="email" placeholder="Enter your email" class="input input-bordered w-full">
+            </div>
+            
+            <div class="form-control">
+                <label class="label"><span class="label-text">Your Message</span></label>
+                <textarea placeholder="Type your message here..." class="textarea textarea-bordered w-full"></textarea>
+            </div>
+
+            <button class="buttonn w-full">Send Message</button>
+        </form>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

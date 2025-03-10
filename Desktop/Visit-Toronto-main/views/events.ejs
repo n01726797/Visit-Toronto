@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<link href="/css/output.css" rel="stylesheet">
+
+
+<main class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold text-center">Upcoming Events in Toronto</h1>
+    <p class="mt-4 text-lg text-center">Toronto hosts exciting events year-round! Check out these upcoming events:</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+        <!-- TIFF -->
+        <div class="car bg-base-100 shadow-xl">
+            <figure><img src="https://globalnews.ca/wp-content/uploads/2023/08/20230817130828-26069584f5e215889cf1f3829d3911fa25e294b6960c28fe899c2561069f555f.jpg?quality=85&strip=all" alt="Toronto International Film Festival"></figure>
+            <div class="car-body">
+                <h2 class="car-title">Toronto International Film Festival (TIFF)</h2>
+                <p>A world-famous film festival showcasing top movies. (September)</p>
+            </div>
+        </div>
+
+        <!-- Winterlicious -->
+        <div class="car bg-base-100 shadow-xl">
+            <figure><img src="https://nowtoronto.com/wp-content/uploads/2025/01/winterlicious-1.png" alt="Winterlicious Festival"></figure>
+            <div class="car-body">
+                <h2 class="car-title">Winterlicious</h2>
+                <p>A city-wide food festival with great dining deals. (January-February)</p>
+            </div>
+        </div>
+
+        <!-- Caribana -->
+        <div class="car bg-base-100 shadow-xl">
+            <figure><img src="https://display.blogto.com/articles/20230805-Caribana-38.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" alt="Caribana Festival"></figure>
+            <div class="car-body">
+                <h2 class="car-title">Caribana</h2>
+                <p>A massive Caribbean festival with a colorful parade. (July)</p>
+            </div>
+        </div>
+
+        <!-- Christmas Market -->
+        <div class="car bg-base-100 shadow-xl">
+            <figure><img src="https://www.kayak.co.uk/news/wp-content/uploads/sites/5/2022/09/DEST_GERMANY_CHRISTMAS_MARKET_ANNABERG_BUCHHOLZ_GettyImages-521667014.jpg" alt="Christmas Market"></figure>
+            <div class="car-body">
+                <h2 class="car-title">Christmas Market</h2>
+                <p>A festive holiday market in the Distillery District. (December)</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>
